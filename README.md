@@ -1,5 +1,8 @@
 # ActiveDirectoryBasics
 
+Use the table of content in the header for skipping to your desired topic -
+![table of content](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/2d473c0b-c727-4c00-82ad-fd78279eacae)
+
 ## Description
 
 This project will contain the fundamentals of active directory that will set the baseline for all my active directory projects. I will be explaining the **physical components** like domain service, domain controller and AD DS data store as well as **logical components** like trees, forest, trusts & object, etc. After that I will talk about types of **authentication** for an AD server.
