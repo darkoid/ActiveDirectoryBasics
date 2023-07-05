@@ -128,7 +128,7 @@ Why is NTLM a weaker authentication method? It is because of how it works. NTLM 
 
 The following steps present an outline of NTLM non-interactive authentication. The first step provides the user's NTLM credentials and occurs only as part of the interactive authentication (logon) process.
 
-<p align="center">![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/48dbc5f8-7830-48d4-8c73-613314a0b7f9)>
+<p align="center">![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/5c1bbea9-6f33-4f73-b230-fe352b10e3cf)
 </p>
 
 - i. A user accesses a client computer and provides a domain name, user name, and a password.The client computes a cryptographic hash of the password and discards the actual password. The client sends the user name to the server (in plaintext).
@@ -155,10 +155,10 @@ Kerberos uses a two-part process that leverages a ticket granting service or key
 </p> <p align="right">Ignore the yellow tag about kerberoasting, I was lazy to remove it.</p>
 
 1. When a user logs on to Active Directory, the user authenticates to the Domain Controller (DC) using the user’s password which of course the DC knows.
-2. The DC sends the user a Ticket Granting Ticket ([TGT](https://www.notion.so/2-Kerberos-default-by-Microsoft-Windows-4feed7270d1140c5af27a20c55c6bb60?pvs=21)) Kerberos ticket. The [TGT](https://www.notion.so/2-Kerberos-default-by-Microsoft-Windows-4feed7270d1140c5af27a20c55c6bb60?pvs=21) is presented to any DC to prove authentication for Kerberos service tickets.
+2. The DC sends the user a Ticket Granting Ticket (TGT) Kerberos ticket. The TGT is presented to any DC to prove authentication for Kerberos service tickets.
 3. The user opens up Skype which causes the user’s workstation to lookup the Service Principal Name (SPN) for the user’s Exchange server.
-4. Once the [SPN](https://www.notion.so/2-Kerberos-default-by-Microsoft-Windows-4feed7270d1140c5af27a20c55c6bb60?pvs=21) is identified, the computer communicates with a DC again and presents the user’s [TGT](https://www.notion.so/2-Kerberos-default-by-Microsoft-Windows-4feed7270d1140c5af27a20c55c6bb60?pvs=21) as well as the [SPN](https://www.notion.so/2-Kerberos-default-by-Microsoft-Windows-4feed7270d1140c5af27a20c55c6bb60?pvs=21) for the resource to which the user needs to communicate.
-5. The DC replies with the Ticket Granting Service ([TGS](https://www.notion.so/2-Kerberos-default-by-Microsoft-Windows-4feed7270d1140c5af27a20c55c6bb60?pvs=21)) Kerberos service ticket.
+4. Once the SPN is identified, the computer communicates with a DC again and presents the user’s TGT as well as the SPN for the resource to which the user needs to communicate.
+5. The DC replies with the Ticket Granting Service (TGS) Kerberos service ticket.
 6. The user’s workstation presents the TGS to the Exchange server for access.
 7. Skype connects successfully
 
