@@ -19,7 +19,9 @@ This project will contain the fundamentals of active directory that will set the
 
 ## What is Active Directory for?
 You could see Active Directory as a service / database which stores records data on users, devices, applications, groups, give permissions and manage all this information in a hierarchical structure, its primary function is to AuthN and AuthZ users and computers.
-![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/f64ba1b9-fc76-4679-a3b2-37c34130ebc5)
+<p ailgn="center">
+  <img src=https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/f64ba1b9-fc76-4679-a3b2-37c34130ebc5>
+</p>
 
 ## Active Directory Abbreviation
 - AD: Active Directory
@@ -32,7 +34,9 @@ You could see Active Directory as a service / database which stores records data
 
 ## Physical AD Component
 This is the servers and machines on-premise, these can be anything from domain controllers and storage servers to domain user machines; everything needed for an Active Directory environment besides the software.
-![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/b270b31e-1580-4f6f-b469-b21883651ff9)
+<p ailgn="center">
+  <img src=https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/b270b31e-1580-4f6f-b469-b21883651ff9>
+</p>
 
 ### Domain Controller(DC)
 A domain controller is a Windows server that has Active Directory Domain Services (AD DS) installed and has been promoted to a domain controller. **AD DS** is the core of any Windows Domain. This service acts as a catalogue that holds the information of all of the objects that exist on your network.
