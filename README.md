@@ -19,7 +19,7 @@ This project will contain the fundamentals of active directory that will set the
 
 ## What is Active Directory for?
 You could see Active Directory as a service / database which stores records data on users, devices, applications, groups, give permissions and manage all this information in a hierarchical structure, its primary function is to AuthN and AuthZ users and computers.
-<p align="center">![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/f64ba1b9-fc76-4679-a3b2-37c34130ebc5)</p>
+![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/f64ba1b9-fc76-4679-a3b2-37c34130ebc5)
 
 ## Active Directory Abbreviation
 - AD: Active Directory
@@ -32,7 +32,7 @@ You could see Active Directory as a service / database which stores records data
 
 ## Physical AD Component
 This is the servers and machines on-premise, these can be anything from domain controllers and storage servers to domain user machines; everything needed for an Active Directory environment besides the software.
-<p align="center">![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/b270b31e-1580-4f6f-b469-b21883651ff9)</p>
+![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/b270b31e-1580-4f6f-b469-b21883651ff9)
 
 ### Domain Controller(DC)
 A domain controller is a Windows server that has Active Directory Domain Services (AD DS) installed and has been promoted to a domain controller. **AD DS** is the core of any Windows Domain. This service acts as a catalogue that holds the information of all of the objects that exist on your network.
@@ -53,7 +53,7 @@ Active Directory Data Store stores the databases files and processes that store 
 
 ## Logical AD Component
 Logical AD Componets consists of Schema, Forests, Trees, Domains, Organizational Units, Trusts and Objects. These components can be described by the following AD Structure -
-<p align="center">![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/fa2eeeb1-5607-48c7-a733-8c18ed9227f5)</p>
+![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/fa2eeeb1-5607-48c7-a733-8c18ed9227f5)
 
 ### Schema
 A blueprint that defines of how objects can be created, stored and configured in AD, every object is an instance of a class and every class has their own attributes. We can define object types as follows -
@@ -128,8 +128,7 @@ Why is NTLM a weaker authentication method? It is because of how it works. NTLM 
 
 The following steps present an outline of NTLM non-interactive authentication. The first step provides the user's NTLM credentials and occurs only as part of the interactive authentication (logon) process.
 
-<p align="center">![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/5c1bbea9-6f33-4f73-b230-fe352b10e3cf)
-</p>
+![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/5c1bbea9-6f33-4f73-b230-fe352b10e3cf)
 
 - i. A user accesses a client computer and provides a domain name, user name, and a password.The client computes a cryptographic hash of the password and discards the actual password. The client sends the user name to the server (in plaintext).
 - ii. The server generates a 16-byte random number, called a challenge or Nonce and sends it back to the client.
@@ -151,7 +150,7 @@ Kerberos uses a two-part process that leverages a ticket granting service or key
 - **Session Key** - Issued by the KDC when a TGT is issued. The user will provide the session key to the KDC along with the TGT when requesting a service ticket.
 - **Privilege Attribute Certificate (PAC)** - The PAC holds all of the user's relevant information, it is sent along with the TGT to the KDC to be signed by the Target LT Key and the KDC LT Key in order to validate the user.
 
-<p align="center"> ![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/be901080-8ed4-4f61-9249-8d359e8e1763)
+![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/be901080-8ed4-4f61-9249-8d359e8e1763)
 </p> <p align="right">Ignore the yellow tag about kerberoasting, I was lazy to remove it.</p>
 
 1. When a user logs on to Active Directory, the user authenticates to the Domain Controller (DC) using the user’s password which of course the DC knows.
@@ -174,8 +173,7 @@ In recent years, many companies have started using Active Directory in cloud and
 
 ### Overview
 Azure acts as the middle man between your physical Active Directory and your users' sign on which builds a more secure transaction between domains, making a lot of AD attacks ineffective.
-<p align="center">![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/05074db3-a506-41f7-8274-76a316576960)
-</p>
+![image](https://github.com/darkoid/ActiveDirectoryBasics/assets/81341961/05074db3-a506-41f7-8274-76a316576960)
 
 ### Cloud Security in comparasion with physical network
 
